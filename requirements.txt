@@ -4,3 +4,4 @@ streamlit
 pyarrow
 pytest
 apache-airflow==2.5.0  # optional; pin if using
+plotly
