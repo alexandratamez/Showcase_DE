@@ -46,6 +46,7 @@ python src/etl/transform.py
 
 # 5. Launch dashboard
 streamlit run src/app/dashboard.py
+```
 
 --- 
 
@@ -58,6 +59,7 @@ streamlit run src/app/dashboard.py
 - **Reproducible development:** containerized environment with Docker and automated CI using GitHub Actions
 - **Automation & tests:** pipeline scripts and CI ensure consistent, reliable outputs
 
+--- 
 
 ## Dashboard Highlights
 
