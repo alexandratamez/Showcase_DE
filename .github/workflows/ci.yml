@@ -1,0 +1,22 @@
+name: CI
+on: [push, pull_request]
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: 3.10
+      - name: Install deps
+        run: |
+          pip install -r requirements.txt
+      - name: Generate data & run pipeline
+        run: |
+          python src/data_gen.py
+          python -c "from src.etl.ingest import load_raw, write_staging; c,o=load_raw(); write_staging(c,o)"
+          python -c "from src.etl.validate import validate_orders; import pandas as pd; print(validate_orders(pd.read_parquet('data/processed/orders_staging.parquet')))"
+          python -c "from src.etl.transform import transform; transform()"
+      - name: Run tests
+        run: pytest -q
