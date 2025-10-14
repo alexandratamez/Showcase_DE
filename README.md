@@ -69,26 +69,6 @@ streamlit run src/app/dashboard.py
 
 <div align="center"> <img src="images/dashboard demo.png" alt="Streamlit Dashboard Demo" width="700"> </div>
 
-## Project Structure
-
-project/
-│
-├── data/
-│   ├── raw/                # Stores raw datasets
-│   └── processed/          # Contains cleaned and transformed data
-│
-├── src/
-│   ├── etl/
-│   │   ├── ingest.py       # Ingests data from raw sources
-│   │   ├── validate.py     # Validates data quality and detects issues
-│   │   └── transform.py    # Applies cleaning and transformation logic
-│   │
-│   └── app/
-│       └── dashboard.py    # Streamlit dashboard application
-│
-└── dags/
-    └── showcase_dag.py     # Airflow DAG automating the ETL workflow
-
 ## File Explanations
 - data/raw/
 Stores raw, unprocessed datasets used as input for the ETL pipeline.
