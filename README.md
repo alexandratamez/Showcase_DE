@@ -75,21 +75,27 @@ streamlit run src/app/dashboard.py
 Stores raw, unprocessed datasets used as input for the ETL pipeline.
 
 - data/processed/
+
 Contains validated and transformed data, ready for analysis and visualization.
 
 - src/etl/ingest.py
+
 Handles data ingestion from CSVs or external sources into the raw data directory.
 
 - src/etl/validate.py
+
 Performs quality checks — identifies nulls, duplicates, and incorrect formats — and logs issues for review.
 
 - src/etl/transform.py
+
 Executes the main transformation logic, cleaning and enriching data for analytical use.
 
 - dags/showcase_dag.py
+
 Defines an Airflow DAG that automates the full ETL process, from ingestion to transformation.
 
 - src/app/dashboard.py
+
 Creates the Streamlit dashboard visualizing processed data.
 
 
