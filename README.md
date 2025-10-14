@@ -115,6 +115,7 @@ Additional documentation, screenshots, or validation reports can be added under 
 
 ## 👩‍💻 Author
 Alexandra Tamez
-Data Engineer | Data Analyst | Machine Learning Integrator
-[LinkedIn](https://www.linkedin.com/in/alexandratamez/) • [GitHub](https://github.com/alexandratamez)
+Data Engineer | Data Analyst | ML and AI Integrator
+
+[LinkedIn](https://www.linkedin.com/in/alexandratamez/)  [GitHub](https://github.com/alexandratamez)
 
